@@ -2,7 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-
+console.log("here1");
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -24,7 +24,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 getAnalytics(app);
-
+console.log("here2");
 Vue.config.productionTip = false;
 
 new Vue({
@@ -32,3 +32,4 @@ new Vue({
   store,
   render: (h) => h(App),
 }).$mount("#app");
+console.log("here3");
